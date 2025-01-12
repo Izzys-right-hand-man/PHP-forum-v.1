@@ -1,5 +1,5 @@
 <?php
 
-echo "test" . $_GET[''];
+echo "test" . $_GET['test'];
 
 ?>
