@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta charset="utf-8">
+<title>  Barebones,no_php</title>
+<link rel="stylesheet" href="css/styles.css?v=1.0">
+<h1>  PHP forum test v.1</h1><br><br>
+
+<textarea id="ghost" placeholder="  Be nice or code in DOS"></textarea><br><br>
+<button id="submit" onclick="send()">  Post</button>
+<div id="real"></div>
+<script> 
+
+	function send() {
+    	const d = new Date();
+    	var real = document.getElementById("real");
+        var ghost = document.getElementById("ghost").value;
+    	real.innerHTML = "<br>'" + ghost + "'<br><br>" + "Sent at: " + d;
+        const xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "test");
+  		xhttp.send();
+    
+    };
+
+
+
+</script>
+
+
+</body>
+</html>
