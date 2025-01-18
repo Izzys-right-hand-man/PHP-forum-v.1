@@ -1,1 +1,1 @@
-document.write(100)
+printf("hello world");
