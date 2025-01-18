@@ -9,6 +9,16 @@
 <textarea id="ghost" placeholder="  Be nice or code in DOS"></textarea><br><br>
 <button id="submit" onclick="send()">  Post</button>
 <div id="real"></div>
+
+<?php
+// the message
+$msg = "First line of text\nSecond line of text";
+	
+$msg = wordwrap($msg,70);
+
+// send email
+mail("Ciii30@pcstudents.us","My subject",$msg);
+?>
 <script src="passwdgen.js"></script>
 <script> 
 
