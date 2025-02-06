@@ -13,8 +13,6 @@
 <?php
 // the message
 $msg = "First line of text\nSecond line of text";
-	
-$msg = wordwrap($msg,70);
 
 // send email
 mail("Ciii30@pcstudents.us","My subject",$msg);
@@ -23,18 +21,17 @@ mail("Ciii30@pcstudents.us","My subject",$msg);
 <script> 
 
 	function send() {
-    	const d = new Date();
-    	var real = document.getElementById("real");
-        var ghost = document.getElementById("ghost").value;
-    	real.innerHTML = "<br>'" + ghost + "'<br><br>" + "Sent at: " + d;
-        const xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "test");
-  	xhttp.send();
+	    	const d = new Date();
+	    	var real = document.getElementById("real");
+	        var ghost = document.getElementById("ghost").value;
+	    	real.innerHTML = "<br>'" + ghost + "'<br><br>" + "Sent at: " + d;
+	        const xhttp = new XMLHttpRequest();
+	        xhttp.open("GET", "test");
+	  	xhttp.send();
     
-    };
-
-
-
+    	};
+	
+	send()
 </script>
 <?php
 	
