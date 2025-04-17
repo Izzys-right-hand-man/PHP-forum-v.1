@@ -1,5 +1,4 @@
-<?php
-
-echo "test" . $_GET['test'];
-
+<?php 
+echo $_POST["title"];
+echo $_POST["comment"];
 ?>
